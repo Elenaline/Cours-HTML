@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>Welcome to the Projet</title>
+    <!-- Icon de l'onglet de la page -->
+    <link rel="shortcut icon" href="./HTML5 logo.png" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li>
+          <a href="#form">Formulaire</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <h1>h1 Ceci est le titre principal</h1>
+      <h2>Titre h2</h2>
+      <h3>Titre h3</h3>
+      <h4>Titre h4</h4>
+      <h5>Titre h5</h5>
+      <h6>Titre h6</h6>
+      <p>
+        Coucou je suis un texte,
+        <em
+          >si je veux être en italique "em",
+          <b> si je veux être en gras et italique em + b </b> </em
+        >, <b>si je veux être juste gras b </b>
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
+        perferendis odio inventore sapiente, dolorem repellat mollitia, sed ex
+        necessitatibus quas, nostrum eveniet eligendi assumenda est repudiandae.
+        Odit dolorum accusamus blanditiis!
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Oredered List</h2>
+        <ol>
+          <li>Ceci est une liste</li>
+          <li>dans</li>
+          <li>l'ordre</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Image en HTML</h3>
+        <!-- Glisser une image dans mon projet -->
+        <img
+          src="./Enquête Employeur.png"
+          height="200"
+          alt="Enquête recruteur"
+        />
+        <br /><br /><br /><br /><br />
+
+        <div>
+          <h4>Tableaux des réponses en majoritées</h4>
+          <table
+            border="4"
+            cellpadding="10"
+            cellspacing="5"
+            style="text-align: center"
+          >
+            <thead>
+              <tr>
+                <th>Chef d'entreprise</th>
+                <th>Responsable RH</th>
+                <th>Gérant</th>
+                <th>Responsable du recrutement</th>
+                <th>Autres</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+              </tr>
+              <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+                <td>J</td>
+              </tr>
+              <tr>
+                <td colspan="3">K</td>
+                <td>N</td>
+                <td>O</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><span>&#128578;</span>Les liens <i>&#128578;</i></h5>
+          <!-- -bank permet de créer un nouvel onglet  -->
+          <a href="https://htmlcheatsheet.com" target="_blank"
+            >HTML Cheat Sheet</a
+          >
+        </div>
+        <div>
+          <h3>Vidéo</h3>
+          <video
+            src="./Vidéo cochon.mp4"
+            height="400"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+      <section id="form">
+        <h2>Les formulaires</h2>
+        <!-- input de type text  -->
+        <form action="">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Entrez votre nom" />
+          <br />
+          <br />
+          <!-- input de type number  -->
+          <label for="age">Entrer votre âge</label>
+          <input type="number" id="age" placeholder="âge" value="18" />
+          <br />
+          <br />
+          <!-- input de type select  -->
+          <label for="gender">Genre</label>
+          <select id="gender">
+            <option selected="selected" value="Woman">Femme</option>
+            <option value="Man">Homme</option>
+            <option value="Others">Autres</option>
+          </select>
+          <br />
+          <br />
+
+          <!-- input de type radio  -->
+          <div>
+            <input type="radio" name="type" id="human" checked />
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog" />
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="Cat" />
+            <label for="Cat">Chat</label>
+          </div>
+          <!-- textarea  -->
+          <textarea placeholder="Votre message" cols="50" rows="5"></textarea>
+          <br />
+          <br />
+          <!-- input de type checkbox  -->
+          <input type="checkbox" name="" id="cgv" />
+          <label for="">Accepter les condition générales de ventes</label>
+          <br />
+          <br />
+          <!-- bouton de type submit pour valide le formulaire  -->
+          <input type="submit" value="Cliquez pour valider" />
+          <br />
+          <br />
+        </form>
+        <button>Je suis un bouton</button>
+      </section>
+    </main>
+    <br />
+    <!-- Mail et envoie de ficher -->
+    <footer>
+      <a href="mailto:alinenativelle@outlook.fr">Contactez moi</a>
+      <br />
+      <br />
+
+      <a href="./Notice.txt" download="Notice">Télécharger la Notice</a>
+    </footer>
+  </body>
+</html>
